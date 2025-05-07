@@ -2,7 +2,7 @@
 extern crate serde;
 
 pub mod transferpb {
-    tonic::include_proto!("transferpb");
+    include!("transferpb.rs");
 }
 
 pub type Priority = u32;
